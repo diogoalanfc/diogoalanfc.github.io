@@ -3,11 +3,92 @@
 	<head> <!--cabeça-->
 	  <meta charset="utf-8">
  	  <title>Minha primeira página</title>
+ 	  <style>
+ 	  /*Seletor de elemento*/
+ 	  p{
+ 	  	background-color: yellow;
+ 	  	color: red
+ 	  }
+ 	  body{
+ 	  	background-color: black;
+ 	  	color: green;
+ 	  	font-size:30px; 
+ 	  }
+
+ 	  img{
+ 	  	width: 200px;
+ 	  	border: 5px solid white;
+ 	  	outline: 2px dotted green;
+ 	  }
+
+ 	</style>
 	</head>
 	<body> <!--corpo-->
 	<h1> alo ha mundo </h1>
 
-	<img src="https://www.w3.org/QA/Tools/I_heart_validator"/>
+     <a href="https://validator.w3.org/#validate_by_input"
+	target="_blank">
+	<img 
+	     style = "display: block;
+	              margin:0 auto;"
+	src="https://www.w3.org/QA/Tools/I_heart_validator"
+	alt = "Logo do validador w3c"
+	title="Validador w3c"/>
+	</a>
+
+	<p>Isso e um paragrafo.<br> 
+	O paragrafo utiliza<br/>
+	 a tag &lt;p&gt; <br><!--Quebra de linha-->
+	</p>
+	<p>
+	Este e outro paragrafo.
+    </p>
+    <!--linha de divisão -->
+    <hr/>
+    <h1>Titulo 1 - Grandão</h1>
+    <h2>Titulo 2 - Grande</h2>
+    <h3>Titulo 3 - médio</h3>
+    <h4>Titulo 4 - Pequeno</h4>
+    <h5>Titulo 5 - Pequenino</h5>
+    <h6>Titulo 6 - Menorzinho</h6>
+    <hr/>
+    <h1> Lista ordenada Enumerada</h1>
+    <ol>
+    	<li>Corinthians</li>
+    	<li>Flamengo</li>
+    	<li>Atletico m</li>
+
+    </ol>
+
+    <h1>Lista nao ordenada</h1>
+    <ul>
+    	<li>HTML</li>
+    	<li>Javascript</li>
+    	<li>CSS</li>
+
+    </ul>
+    <hr>
+    <p>
+    	Para <strong>Reforçar</strong>
+    	uma palavra, usa-se o
+    	&lt;strong&gt;.
+    </p>
+    <p style="font-size: 30px;">
+    	Para dar <em>ênfase</em> em
+    	uma palavra , usa-se o &lt; em &gt;.
+    </p>
+
+    <!--CSS Inline -->
+    <p style="
+    width: fit-content;
+    margin: 0 auto;
+    background-color: deeppink;
+    color: white;">
+    <strong>Negrito</strong> e <em>Itálico</em>  <!--Exemplo de formatação de texto -->
+    	
+    </p>
+    <hr/>
+
 
 	</body>
 
