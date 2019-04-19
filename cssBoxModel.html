@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>css básico</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Cute+Font');
+
+	body{
+		background-color: #272822;
+		color: rgb(248,248,242);
+		font-family: 'Raleway', sans-serif;
+		text-align: justify;;
+	}
+	h1,h2{
+		color: rgb(249,38,76);
+		font-family: 'Dokdo', cursive;
+	}
+	/*Pseudo classe*/
+	main p:nth-of-type(2n){ /*even / Par*/
+		background-color: deepskyblue;
+		color: deeppink;
+ }
+ main p:nth-of-type(2n){/*2n+1 / impar  */
+ 	background-color: yellow;
+ 	color: brown;
+
+ }
+ h1:hover{/*Ao passar o mouse por cima*/
+ 	background-color: white;
+ 	border: 2px lightgreen solid;
+ 	width: fit-content;
+ }
+ /*Seletor de classe / Classificação*/
+ /*Utiliza-se o . Para a classe*/
+ .caixa{
+ 	width: 630px;
+ 	height: 200px;
+ 	border: 2px yellow ridge;
+ 	margin: 0 auto;
+ 	padding: 30px 40px;
+ 	
+ }
+  .circulo{
+ 	width: 200px; height: 200px;
+ 	/*Mesma altura e largura*/
+ 	height: 200px;
+ 	border: 2px dotted white;
+ 	border-radius: 50%;/*Arredondamento*/
+ 	float: left;/* Uma do lado da outra*/
+ 	box-sizing: border-box;
+ 	text-align:center; 
+ 	padding-top: 70px;
+ 	margin-left: 10px;
+ }
+ .circulo:hover{
+ 	box-shadow: 0 0 10px yellow;
+ }
+ .sombra{
+ 	box-shadow: 0 0 10px white;
+ 	border-radius: 10px;
+ }
+ /*Seletor de identificação*/
+ /*Utilisa-se o hash # para is */
+ #principal{
+ 	background-color: black;
+ }
+#primeira{
+ 	background-color:  rgba(255,0,0,0.3);
+ 	/*cor com 30% de transparencia*/
+ }
+ #segunda{
+ 	background-color: rgba(0,255,0,0.3);
+ 	}
+ #terceira{
+ 	background-color: rgba(255,0,0,0.3);
+ 	}
+ span{
+ 	font-weight: bold;
+ 	color: orange;
+ }
+
+</style>
+</head>
+<body>
+        <h1>Olá Maravilhoso Mundo !!! </h1>
+
+        <div id = "principal" class = "caixa sombra" > <!--Dentro da div principal-->
+        	<div id="primeira" class="circulo">
+        		<p>Conteúdo <span>1° DIV </span> </p>
+        		
+        	</div> <!--1° div-->
+        	<div id= "segunda" class="circulo">
+        		<p>Conteúdo <span>2° DIV </span> </p>
+        		
+        	</div> <!--2° div-->
+        	<div id="terceira" class="circulo">
+        		<p>Conteúdo <span>3° DIV </span> </p>
+        		
+        	</div><!--3° div-->
+        </div>> <!--Fora da div-->
+
+         <main>
+ 		<h2> 1° Paragrafo</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et odio a ex molestie tempus. In mattis lorem enim, eu cursus nisl molestie id. Donec vitae elit at mi pretium placerat. In a ex eget risus sodales ultrices. Praesent quis bibendum ligula. Suspendisse eu augue vitae felis mattis faucibus vel a sapien. Etiam lacinia magna lacus, et pellentesque dui rutrum non. Sed vel tempus urna. Integer ullamcorper risus porttitor laoreet ornare. Duis cursus pellentesque nulla, eu elementum eros consequat dictum. Integer porttitor condimentum lacus sed hendrerit. Curabitur ut odio ac purus tempus cursus.</p>
+
+        <h2> 2° Paragrafo</h2>
+<p>Pellentesque nec dolor pellentesque ante pellentesque facilisis vitae nec nulla. Fusce accumsan sit amet est iaculis aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed felis odio, aliquet sed luctus in, finibus vitae magna. Quisque eget est euismod nulla cursus lobortis quis quis urna. Aenean quis felis a diam porttitor sollicitudin nec id risus. Sed in scelerisque leo. Morbi convallis mi et euismod porttitor. Donec risus neque, scelerisque quis nisl vel, maximus porta odio. Duis maximus mauris eu massa mattis sollicitudin.</p>
+
+		<h2> 3° Paragrafo</h2>
+<p>Vestibulum ultrices dignissim massa vel porttitor. Maecenas molestie, nunc a accumsan tempor, dolor enim iaculis magna, ac lacinia nibh nibh id massa. Quisque id sem leo. Sed vehicula in leo vel finibus. Quisque vehicula quam at posuere efficitur. Maecenas a ipsum a mauris condimentum consectetur id a odio. Nullam aliquam felis a nunc ullamcorper, eget consequat elit tincidunt. Donec faucibus faucibus justo id pretium. Praesent vel finibus metus, vel mattis ante. Suspendisse pretium, tortor id auctor auctor, felis sapien sagittis est, in volutpat neque urna ac ipsum. Nulla egestas lectus id augue congue gravida. In hac habitasse platea dictumst. Sed fermentum erat in tempus scelerisque. Ut congue, augue sit amet eleifend auctor, augue dui commodo neque, non porttitor sem turpis at magna. Aliquam non nulla ex. Aliquam quis nibh ut felis feugiat suscipit in at est.</p>
+
+		<h2> 4° Paragrafo</h2>
+<p>Mauris vel felis vitae urna pulvinar malesuada. In placerat diam lacus, non tincidunt leo pulvinar ut. Nullam posuere imperdiet ipsum, vel commodo orci lobortis eget. Praesent ultrices euismod volutpat. Donec vel odio non enim placerat placerat. Sed sagittis ornare nunc eu semper. Nam et orci sit amet justo posuere cursus. Donec non pulvinar turpis, eu dignissim est. Fusce quis justo ac orci sagittis vulputate a at neque.</p>
+
+		<h2> 5° Paragrafo</h2>
+<p>Aenean luctus magna arcu, ac euismod dolor pellentesque pellentesque. Nullam sodales libero vel ligula semper congue. Pellentesque vitae neque nec arcu efficitur volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque eu venenatis est. Ut nec venenatis purus. Donec non diam libero. Vivamus interdum sapien dapibus urna hendrerit, in dignissim lacus convallis. Phasellus vulputate dolor at orci aliquam, rutrum accumsan tellus finibus. Ut sem arcu, elementum eget viverra quis, tempus vel neque.</p>
+
+		<h2> 6° Paragrafo</h2>
+<p>Donec ac semper lectus. Etiam at placerat turpis. Duis sollicitudin pretium lorem ut consequat. Nam fringilla varius gravida. Etiam luctus ipsum vitae diam volutpat, ac consequat tellus malesuada. Nulla eu dui vel purus auctor condimentum. Ut scelerisque sodales euismod.</p>
+
+		<h2> 7° Paragrafo</h2>
+<p>Donec euismod velit est, eu volutpat libero pharetra pretium. Cras scelerisque sapien lobortis aliquet dapibus. Morbi eleifend dolor sit amet felis congue, sit amet dapibus leo vestibulum. Proin auctor turpis finibus ornare auctor. Proin laoreet, ipsum vel tristique mollis, ex felis fringilla sapien, a molestie massa tellus et enim. Integer interdum justo in ante fermentum, ac scelerisque ex cursus. Nulla facilisi. Sed id tincidunt nunc, ac pellentesque arcu. Nullam dui enim, lobortis nec libero sed, rutrum egestas felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer elementum nibh vitae massa commodo laoreet.</p>
+
+		<h2> 8° Paragrafo</h2>
+<p>Integer metus tortor, fringilla nec eros a, dapibus scelerisque ex. Ut venenatis justo vel maximus imperdiet. Mauris ante nulla, finibus quis leo blandit, pharetra pulvinar nibh. Maecenas tincidunt molestie dapibus. Phasellus et aliquam magna, et venenatis dolor. Proin eget arcu in magna imperdiet convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In et condimentum ipsum. Nam pharetra auctor nulla, a lacinia ligula accumsan at. Vivamus tincidunt massa et tellus auctor, eu varius sem viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur viverra accumsan mauris non ultrices. Phasellus blandit ex vitae nibh pellentesque, at tempus dui egestas.</p>
+
+		<h2> 9° Paragrafo</h2>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam egestas, purus sed mattis condimentum, ex magna egestas tortor, at blandit velit purus id nisl. Aliquam sit amet mauris ac tellus aliquam faucibus tincidunt ac libero. Nulla a urna turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi placerat mollis sollicitudin. Curabitur a malesuada magna. Nullam ut vehicula risus. Pellentesque commodo pharetra ante, viverra eleifend diam sollicitudin eget.</p>
+
+		<h2> 10° Paragrafo</h2>
+<p>Nullam sit amet dignissim odio, sit amet blandit lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec imperdiet pellentesque pulvinar. Ut a placerat arcu. Donec quis ex at neque viverra pretium. Maecenas at nulla arcu. Sed a neque id dolor porttitor tempus. Vivamus convallis finibus massa, id imperdiet massa tincidunt quis. Mauris vel bibendum eros. Proin venenatis, enim ac suscipit fermentum, ipsum nunc tincidunt enim, sed vestibulum est arcu id enim. Sed maximus dapibus risus, et tempor orci viverra sed. Ut egestas pellentesque sapien, sit amet dignissim ligula tempus vel.</p>
+</main>
+
+</body>
+</html>
