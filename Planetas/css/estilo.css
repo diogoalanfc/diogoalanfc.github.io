@@ -1,0 +1,79 @@
+html{
+	/*Suavização da rolagem*/
+	scroll-behavior: smoth;
+	/*Rolagem-comportamento: suave;*/
+}
+
+body{
+	background-color: black;
+	
+}
+h1,h2,h3{
+	color: silver;
+	text-shadow: 2px 2px 7px lime;
+}
+p{
+	color: pink;
+}
+.astro{
+	background-color: white;
+  border-radius: 50% ;/*Arredondamento*/
+  border: 4px dotted white;/*Borda*/
+  width: 150px;
+  height: 150px;
+  /*Largura = altura => quadrado*/
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin: 0 auto;/*Centraliza imagem*/
+  box-shadow: 0 0 15px lime;/*Brilho*/
+
+}
+.btn{
+	/*Arredondamento*/
+	border-radius: 5px;
+	/*Retira o sublinhado*/
+	text-decoration: none;
+	/*Texto Centralizado*/
+	text-align: center;
+	/*cor do texto*/
+	color: black;
+	/*Cor do fundo*/
+	background-color: lightgray;
+	width: 80px;/*Largura*/
+	display: block;/*Kit centralizador*/
+	margin: 0 auto;/*Kit centralizador*/
+	padding: 20px;/*Prenchimento*/
+	font-size: 30px;/*Tamanho da fonte*/
+}
+	a.btn:hover{/*Pseudoclasse - Passar o mouse*/
+	box-shadow: 0 0 5px orange;
+}
+	/*Estilizaçao do Menu Superior*/
+	/*https://www.w3schools.com/css/css_dropdowns.asp*/
+	/*web colors para procurar cores*/
+	ul{
+		position: sticky;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:blue; 
+
+	}
+	li{
+	float: left;
+	}
+	/*link dentro da lista*/
+	li a{
+	display: block;
+	background-color: lightgray;
+	font-size: 22px;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+
+}
+li a:hover{
+background-color: fuchsia;
+}
